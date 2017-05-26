@@ -31,5 +31,11 @@ void EjercicioSplitter::Window_Open(Win::Event& e)
 	bchart1.Bars.Add(L"July", RGB(50, 50, 230), 80.0);
 	bchart1.MaxY = 100.0;
 	bchart1.Text = L"Sales";
+	//splitter
+	splitter.Setup(hWnd, 200);
+	splitter.child1 = bchart1;
+	splitter.child2 = xy1;
+	splitter.UpdateChildrenPosition();
 }
+
 

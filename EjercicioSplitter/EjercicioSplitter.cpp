@@ -38,9 +38,4 @@ void EjercicioSplitter::Window_Open(Win::Event& e)
 	splitter.UpdateChildrenPosition();
 }
 
-void EjercicioSplitter::Window_Size(Win::Event& e)
-{
-	splitter.UpdateChildrenPosition();
-
-}
 

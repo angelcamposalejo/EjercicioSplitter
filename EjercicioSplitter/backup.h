@@ -9,6 +9,7 @@ public:
 	~EjercicioSplitter()
 	{
 	}
+	Win::HorizontalSplitter splitter;
 protected:
 	//______ Wintempla GUI manager section begin: DO NOT EDIT AFTER THIS LINE
 	Win::XyChart xy1;
@@ -30,6 +31,7 @@ protected:
 		fontArial014A.Create(L"Arial", 14, false, false, false, false);
 		xy1.Font = fontArial014A;
 		bchart1.Font = fontArial014A;
+		xy1.SetDock(DOCK_BORDER, DOCK_BORDER, DOCK_BORDER, DOCK_CENTER);
 	}
 	//_________________________________________________
 	void Window_Open(Win::Event& e);

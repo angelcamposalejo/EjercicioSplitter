@@ -31,10 +31,11 @@ protected:
 		fontArial014A.Create(L"Arial", 14, false, false, false, false);
 		xy1.Font = fontArial014A;
 		bchart1.Font = fontArial014A;
+		xy1.SetDock(DOCK_BORDER, DOCK_BORDER, DOCK_BORDER, DOCK_CENTER);
+		bchart1.SetDock(DOCK_BORDER, DOCK_CENTER, DOCK_BORDER, DOCK_BORDER);
 	}
 	//_________________________________________________
 	void Window_Open(Win::Event& e);
-	void Window_Size(Win::Event& e);
 	//_________________________________________________
 	bool EventHandler(Win::Event& e)
 	{
